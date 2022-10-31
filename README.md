@@ -4,7 +4,7 @@ This is a template for a basic RESTful API in express with standardized CRUD ope
 
 ## Usage
 
-Get dependencies: `npm install`
+Get dependencies: `npm install`<br>
 Start the server: `npm start`
 
 The server will run at `http://localhost:3000` by default.
@@ -17,16 +17,16 @@ Data operations currently support MongoDB via `mongoose`, with more to come late
 
 The API has some basic services built-in for example purposes:
 
-`GET /users`
-`POST /users`
-`GET /users/{user_id}`
-`PATCH /users/{user_id}`
-`DELETE /users/{user_id}`
-`GET /profiles`
-`POST /profiles`
-`GET /profiles/{profile_id}`
-`PATCH /profiles/{profile_id}`
-`DELETE /profiles/{profile_id}`
+`GET /users`<br>
+`POST /users`<br>
+`GET /users/{user_id}`<br>
+`PATCH /users/{user_id}`<br>
+`DELETE /users/{user_id}`<br>
+`GET /profiles`<br>
+`POST /profiles`<br>
+`GET /profiles/{profile_id}`<br>
+`PATCH /profiles/{profile_id}`<br>
+`DELETE /profiles/{profile_id}`<br>
 `POST /calculator`
 
 `/users` is a basic user entity, and `/profiles` is an extension of the User data model with a foreign key. `/calculator` is a function call invoked synchronously via `POST` with the function arguments passed in the request body. The calculator pattern is useful for arbitrarily exposing functions in a standard REST format.
