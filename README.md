@@ -29,7 +29,7 @@ The API has some basic services built-in for example purposes:
 `DELETE /profiles/{profile_id}`<br>
 `POST /calculator`
 
-`/users` is a basic user entity, and `/profiles` is an extension of the User data model with a foreign key. `/calculator` is a function call invoked synchronously via `POST` with the function arguments passed in the request body. The calculator pattern is useful for arbitrarily exposing functions in a standard REST format.
+`/users` is a basic user entity, and `/profiles` is an extension of the User data model with an id reference. `/calculator` is a function call invoked synchronously via `POST` with the function arguments passed in the request body. The calculator pattern is useful for arbitrarily exposing functions in a standard REST format.
 
 ## Capabilities
 
@@ -38,5 +38,4 @@ The API has some basic services built-in for example purposes:
 - Standardized CRUD interface that can be applied to any data model
 - UUID primary keys with optional human-readable prefixes (e.g. `USER-5a57b557-6b3d-4efc-b39e-da74ba49dbc7`)
 - User password encryption
-- Customizable entity validation powerd by `joi`
-- Automatic schema adjustment to validate partial request bodies during `PATCH` operations
+- Customizable entity validation powerd by `joi` for `PATCH` and `POST` operations
