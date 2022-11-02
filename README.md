@@ -17,6 +17,7 @@ Data operations currently support MongoDB via `mongoose`, with more to come late
 
 The API has some basic services built-in for example purposes:
 
+`GET /users`<br>
 `POST /users/register`<br>
 `POST /users/login`<br>
 `GET /profiles`<br>
